@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <form action="survey" method="post">
+        <input type="hidden" name="action" value="add">
+        <img src="murachlogo.jpg" alt="Murach Logo">
+        
+        <h1>📃 Survey Form</h1>
+        <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+        
+        <h2>Your Information</h2>
+        <label>First Name:</label>
+        <input type="text" name="firstName" required>
+        
+        <label>Last Name:</label>
+        <input type="text" name="lastName" required>
+        
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        
+        <label>Gender:</label>
+        <p>
+            <input type="radio" name="gender" value="Male" checked> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+        </p>
+        
+        <label>Date of Birth:</label>
+        <input type="date" name="dateOfBirth">
+
+        <h2>How did you hear about us?</h2>
+        <p>
+            <input type="radio" name="heardFrom" value="Search Engine" checked> Search engine
+            <input type="radio" name="heardFrom" value="Friend"> Word of mouth
+            <input type="radio" name="heardFrom" value="Social Media"> Social media
+            <input type="radio" name="heardFrom" value="Other"> Other
+        </p>
+
+        <h2>Would you like to receive announcements?</h2>
+        <p>
+            <input type="checkbox" name="wantsUpdates" checked> YES, I'd like that.<br>
+            <input type="checkbox" name="emailOK"> YES, please send me email announcements.
+        </p>
+
+        <h2>Additional Comments</h2>
+        <textarea name="comments" placeholder="Your feedback..."></textarea>
+        
+        <label>Please contact me by:</label>
+        <select name="contactVia">
+            <option value="Both" selected>Email or postal mail</option>
+            <option value="Email">Email only</option>
+            <option value="Postal Mail">Postal mail only</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
