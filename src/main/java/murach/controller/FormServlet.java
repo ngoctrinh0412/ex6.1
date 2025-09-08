@@ -42,6 +42,9 @@ public class FormServlet extends HttpServlet  {
             // store data in User object and save User object in db
             UserForm user = new UserForm(firstName, lastName, email, gender, dateOfBirth, heardFrom, wantsUpdates, emailOK, comments, contactVia);
             
+            int currentYear = java.time.Year.now().getValue();
+            request.setAttribute("currentYear", currentYear);
+
             // set User object in request object and set URL
             request.setAttribute("user", user);
             url = "/thanks.jsp";   // the "thanks" page

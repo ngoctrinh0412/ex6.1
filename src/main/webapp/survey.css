@@ -11,10 +11,43 @@ body {
     background: #f5f7fa;
     color: #333;
     display: flex;
-    justify-content: center;
-    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    min-height: 100vh;
 }
 
+/* Header */
+header {
+    background: #006d77;
+    color: #fff;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+header img {
+    max-width: 80px;
+    display: block;
+    margin: 0 auto 0.5em;
+}
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3em;
+}
+header p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Form */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2em 1em;
+}
 form, .thanks-container {
     background: #fff;
     padding: 2em;
@@ -24,11 +57,6 @@ form, .thanks-container {
     width: 100%;
 }
 
-h1 {     
-    font-size: 1.8rem;
-    color: #006d77;
-    margin-bottom: 0.5em;    
-}
 h2 {     
     font-size: 1.2rem;
     color: #006d77;
@@ -94,8 +122,16 @@ input[type="submit"]:hover {
     background: #005259;
 }
 
-/* Logo */
-img {
-    max-width: 120px;
-    margin-bottom: 1em;
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: auto;
+}
+footer p {
+    margin: 0.3em 0;
 }
